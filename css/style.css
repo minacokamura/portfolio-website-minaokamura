@@ -13,341 +13,345 @@ Font-family: 'Lato', sans-serif;
 */
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #ede6df;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #2a241b;
+    background-color: #ede6df;
+    font-family: "Lato", sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #2a241b;
 }
 
 header {
-  background-color: #b4928a;
-  text-align: center;
-  padding: 10px;
-  border-bottom: 3px solid #c4964d;
-  box-shadow: 2px 2px 5px 0px rgba(119, 108, 67, 0.59);
-  position: fixed;
-  width: 100%;
+    background-color: #b4928a;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #c4964d;
+    box-shadow: 2px 2px 5px 0px rgba(119, 108, 67, 0.59);
+    position: fixed;
+    width: 100%;
 }
 
 main {
-  padding-top: 120px;
+    padding-top: 120px;
 }
 
 footer {
-  background-color: #b4928a;
-  text-align: center;
-  padding: 10px;
-  border-top: 3px solid #c4964d;
-  width: 100%;
+    background-color: #b4928a;
+    text-align: center;
+    padding: 10px;
+    border-top: 3px solid #c4964d;
+    width: 100%;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
-h1, h2, h3, h4 {
- line-height: 1.4;
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
 }
 h1 {
- font-size: 1.25em;
- font-weight: 700;
+    font-size: 1.25em;
+    font-weight: 700;
 }
 h2 {
- font-size: 1.15em;
- font-weight: 700;
+    font-size: 1.15em;
+    font-weight: 700;
 }
 h3 {
- font-size: 1.05em;
- font-weight: 400;
+    font-size: 1.05em;
+    font-weight: 400;
 }
 h4 {
- font-size: 0.95em;
- font-weight: 400;
+    font-size: 0.95em;
+    font-weight: 400;
 }
 
 a {
-  color: #b4928a;
-  text-decoration: none; /* No underlining */
+    color: #b4928a;
+    text-decoration: none; /* No underlining */
 }
 a:hover {
-  color: #c4964d;
-  text-decoration: underline; /* Underlining when hovering over a link */
+    color: #c4964d;
+    text-decoration: underline; /* Underlining when hovering over a link */
 }
-a:visited { /* visited link */
-  color: #2a241b;
+a:visited {
+    /* visited link */
+    color: #2a241b;
 }
-a:active { /* selected link */
-  color: #b4928a;
+a:active {
+    /* selected link */
+    color: #b4928a;
 }
 a:hover,
 a:focus {
-  color: #c4964d;
-  text-decoration: underline;
+    color: #c4964d;
+    text-decoration: underline;
 }
 
 .button {
-  display: inline-block;
-  background-color: #ffffff;
-  color: #b4928a;
-  font-size: 0.85em;
-  font-weight: 400;
-  padding: 6px;
-  border-radius: 3px;
-  border-bottom: 2px solid #b4928a;
-  transition: 0.2s opacity;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #b4928a;
+    font-size: 0.85em;
+    font-weight: 400;
+    padding: 6px;
+    border-radius: 3px;
+    border-bottom: 2px solid #b4928a;
+    transition: 0.2s opacity;
 }
 .button:hover {
-  opacity: 0.8;
-  text-decoration: none;
+    opacity: 0.8;
+    text-decoration: none;
 }
 .button:active {
-  color: #2a241b;
+    color: #2a241b;
 }
 
 .button.contact {
-  background-color: transparent;
-  color: #d4bebe;
-  text-transform: uppercase;
-  border: 2px solid #ffffff;
-  font-weight: 400;
-  font-size: 0.85em;
+    background-color: transparent;
+    color: #d4bebe;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    font-weight: 400;
+    font-size: 0.85em;
 }
 
 .button.contact:hover {
-  background-color: #ffffff;
-  color: #c4964d;
+    background-color: #ffffff;
+    color: #c4964d;
 }
 .button.contact:active {
-  color: #2a241b;
+    color: #2a241b;
 }
 
 .cvbutton {
-  text-align: center;
-  margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
 }
 .button.cv {
-  background-color: transparent;
-  color: #c4964d;
-  border: 2px solid #ffffff;
-  font-weight: 400;
-  font-size: 0.85em;
+    background-color: transparent;
+    color: #c4964d;
+    border: 2px solid #ffffff;
+    font-weight: 400;
+    font-size: 0.85em;
 }
 .button.cv:hover {
-  background-color: #ffffff;
-  color: #c4964d;
+    background-color: #ffffff;
+    color: #c4964d;
 }
 .button.cv:active {
-  color: #2a241b;
+    color: #2a241b;
 }
 
 /* Layout styling */
 
 .container {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #work {
-  padding: 10px 0;
+    padding: 10px 0;
 }
 
 #work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px
-  solid #b4928a;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b4928a;
 }
 
 #project .row {
-  padding-bottom: 25px;
-  border-bottom: 1px
-  solid #b4928a;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b4928a;
 }
 
 #exception .row {
-  padding-bottom: 25px;
+    padding-bottom: 25px;
 }
 
 #story .row {
-  padding-bottom: 25px;
-  border-bottom: 1px
-  solid #b4928a;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b4928a;
 }
 
 #hero h1 {
-  margin: 5px 0;
-  text-align: center; /* Centers text */
-  font-size: 1.15em;
-  font-weight: 400;
-  font-family: 'Lora', serif;
+    margin: 5px 0;
+    text-align: center; /* Centers text */
+    font-size: 1.15em;
+    font-weight: 400;
+    font-family: "Lora", serif;
 }
 
 #hero span {
-  font-size: 0.95em;
+    font-size: 0.95em;
 }
 
 #work h2 {
-  text-align: center; /* Centers text */
-  font-family: 'Lora', serif;
-  font-weight: 150;
+    text-align: center; /* Centers text */
+    font-family: "Lora", serif;
+    font-weight: 150;
 }
 
 #work h3 {
-  font-family: 'Lora', serif;
+    font-family: "Lora", serif;
 }
 
 #info h2 {
-  color: #ffffff;
-  font-weight: 350;
+    color: #ffffff;
+    font-weight: 350;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 .logo {
-  max-width: 120px;
+    max-width: 120px;
 }
 
 nav > ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav > ul > li {
-  display: inline-block;
+    display: inline-block;
 }
 
 nav > ul > li > a {
-  padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 0.85em;
-  color: #d4bebe;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.85em;
+    color: #d4bebe;
 }
 
 nav > ul > li > a:visited {
-  color: #2a241b;
+    color: #2a241b;
 }
 
 nav > ul > li > a:hover {
-  color: #ede6df;
+    color: #ede6df;
 }
 
 nav > ul > li > a:active {
-  color: #c4964d;
+    color: #c4964d;
 }
 
 nav {
-  display: inline-block;
-  width: 100%;
+    display: inline-block;
+    width: 100%;
 }
 
 #hero {
-  background-color: #b4928a;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+    background-color: #b4928a;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
 }
 
 #iconset {
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
 }
 
 .icon {
-  padding: 0 15px;
-  width: 60px;
-  display: inline-block;
+    padding: 0 15px;
+    width: 60px;
+    display: inline-block;
 }
 
 #copyright {
-  font-size: 0.65em;
+    font-size: 0.65em;
 }
 
 #about {
-  padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 #about h1 {
-  font-weight: 500;
-  font-family: 'Lora', serif;
+    font-weight: 500;
+    font-family: "Lora", serif;
 }
 
 #story h2 {
-  text-align: center; /* Centers text */
-  font-weight: 400;
-  font-family: 'Lora', serif;
+    text-align: center; /* Centers text */
+    font-weight: 400;
+    font-family: "Lora", serif;
 }
 
 #story h3 {
-  font-weight: 400;
-  font-size: 1.00em;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 .me {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .recipesummary {
-  padding-bottom: 35px;
+    padding-bottom: 35px;
 }
 
 div > ul {
-  padding: 0 20px;
-  margin: 0;
-  font-size: 0.85em;
+    padding: 0 20px;
+    margin: 0;
+    font-size: 0.85em;
 }
 
 .pimage {
-  -webkit-box-shadow: 3px 2px 5px 0px rgba(129, 126, 110, 0.54);
-  -moz-box-shadow: 3px 2px 5px 0px rgba(129, 126, 110, 0.54);
-  box-shadow: 3px 2px 5px 0px rgba(129, 126, 110, 0.54);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(129, 126, 110, 0.54);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(129, 126, 110, 0.54);
+    box-shadow: 3px 2px 5px 0px rgba(129, 126, 110, 0.54);
 }
 
 #project {
-  padding-top: 0;
-  padding-bottom: 30px;
+    padding-top: 0;
+    padding-bottom: 30px;
 }
 
-#project H1, H2{
-  font-family: 'Lora', serif;
-  font-weight: 600;
+#project H1,
+H2 {
+    font-family: "Lora", serif;
+    font-weight: 600;
 }
 
-#project H1{
-  margin-top: 0;
+#project H1 {
+    margin-top: 0;
 }
 
-#project H2{
-  font-size: 1.00em;
+#project H2 {
+    font-size: 1em;
 }
 
-#project H3{
-  font-size: 0.85em;
-  font-weight: 600;
+#project H3 {
+    font-size: 0.85em;
+    font-weight: 600;
 }
 
 div > p {
-  font-size: 0.85em;
+    font-size: 0.85em;
 }
 
 div > ol {
-  padding: 0 40px;
-  margin: 0;
-  font-size: 0.85em;
+    padding: 0 40px;
+    margin: 0;
+    font-size: 0.85em;
 }
 
 div > ol > li {
-  padding: 0 15px;
-  margin: 0;
+    padding: 0 15px;
+    margin: 0;
 }
