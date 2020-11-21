@@ -19,7 +19,7 @@ Font-family: 'Lato', sans-serif;
 body {
     background-color: #ede6df;
     font-family: "Lato", sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 1.00em; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
     color: #2a241b;
@@ -29,8 +29,8 @@ header {
     background-color: #b4928a;
     text-align: center;
     padding: 10px;
-    border-bottom: 3px solid #c4964d;
-    box-shadow: 2px 2px 5px 0px rgba(119, 108, 67, 0.59);
+    border-bottom: 3px solid #d4bebe;
+    box-shadow:  3px 4px 9px 0px rgba(140, 92, 23, 0.64);
     position: fixed;
     width: 100%;
 }
@@ -298,11 +298,15 @@ nav {
 }
 
 .me {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .recipesummary {
     padding-bottom: 35px;
+}
+
+#skillstools h2 {
+    text-align: center;
 }
 
 div > ul {
@@ -354,4 +358,69 @@ div > ol {
 div > ol > li {
     padding: 0 15px;
     margin: 0;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+  nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+  main {
+  padding-top: 98px;
+}
+
+  .col-md-6 {
+  width: 50%;
+}
+
+  [class*="col-"] {
+  float: left;
+  padding: 0 15px
+}
+
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  #skillstools h3 {
+  text-align: center;
+}
+
+  div > ul {
+    padding-left: 60px;
+}
+
+  .cvbutton {
+    padding-top: 5px
+  }
+
+
+
+
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
