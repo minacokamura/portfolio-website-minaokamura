@@ -66,7 +66,7 @@ h2 {
     font-weight: 700;
 }
 h3 {
-    font-size: 1.05em;
+    font-size: 0.95em;
     font-weight: 400;
 }
 h4 {
@@ -135,6 +135,7 @@ a:focus {
 .cvbutton {
     text-align: center;
     margin: 0 auto;
+    padding-top: 8px;
 }
 .button.cv {
     background-color: transparent;
@@ -193,7 +194,7 @@ a:focus {
 }
 
 #hero span {
-    font-size: 0.95em;
+    font-size: 0.85em;
 }
 
 #work h2 {
@@ -276,6 +277,10 @@ nav {
     font-size: 0.65em;
 }
 
+#recipemenoborder {
+  margin-bottom: 25px
+}
+
 #about {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -297,16 +302,17 @@ nav {
     font-size: 1em;
 }
 
+#story {
+  padding-bottom: 25px;
+}
+
 .me {
     padding-bottom: 10px;
 }
 
-.recipesummary {
-    padding-bottom: 35px;
-}
-
 #skillstools h2 {
     text-align: center;
+    font-weight: 400;
 }
 
 div > ul {
@@ -326,21 +332,21 @@ div > ul {
     padding-bottom: 30px;
 }
 
-#project H1,
-H2 {
+#project h1,
+h2 {
     font-family: "Lora", serif;
     font-weight: 600;
 }
 
-#project H1 {
+#project h1 {
     margin-top: 0;
 }
 
-#project H2 {
+#project h2 {
     font-size: 1em;
 }
 
-#project H3 {
+#project h3 {
     font-size: 0.85em;
     font-weight: 600;
 }
@@ -376,17 +382,14 @@ Medium devices (640px and larger)
   margin-top: 4px;
 }
 
-  main {
-  padding-top: 98px;
-}
-
   .col-md-6 {
   width: 50%;
+  padding-left: 15px;
 }
 
-  [class*="col-"] {
-  float: left;
-  padding: 0 15px
+[class*="col-"] {
+float: left;
+padding: 0 15px
 }
 
   .row::after {
@@ -395,19 +398,38 @@ Medium devices (640px and larger)
   display: table;
 }
 
-  #skillstools h3 {
+  #work h3 {
+  margin-top: 0;
+}
+
+#recipemenoborder {
+  margin: 25px 0;
+  padding-bottom: 280px;
+}
+
+#story h2 {
+margin-top: 0;
+}
+
+#st h2 {
   text-align: center;
 }
 
-  div > ul {
-    padding-left: 60px;
+#st h3 {
+  padding-left: 83px;
 }
 
-  .cvbutton {
-    padding-top: 5px
-  }
+#st .row {
+  margin-bottom: 35px;
+}
 
+main {
+padding-top: 99px;
+}
 
+span {
+display: block;
+}
 
 
 
@@ -417,10 +439,55 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+  width: 58.33%;
+}
+
+  .col-lg-5 {
+  width: 41.66%;
+}
+
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+  #recipemenoborder {
+  margin: 30px 0;
+  padding-bottom: 430px;
+}
+
+  .me {
+  padding-bottom: 60px;
+}
+
+  span {
+  display: block;
+}
+
+
+
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+
+.container {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+main {
+padding-bottom: 99px;
+}
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
 }
