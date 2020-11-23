@@ -102,14 +102,15 @@ a:focus {
     color: #b4928a;
     font-size: 0.85em;
     font-weight: 400;
+    text-decoration: none;
     padding: 6px;
     border-radius: 3px;
     border-bottom: 2px solid #b4928a;
-    transition: 0.2s opacity;
+    transition-duration: 0.2s;
+    transition-property: opacity;
 }
 .button:hover {
     opacity: 0.8;
-    text-decoration: none;
 }
 .button:active {
     color: #2a241b;
@@ -303,7 +304,7 @@ nav {
 }
 
 #story {
-  padding-bottom: 25px;
+  padding-bottom: 0;
 }
 
 .me {
