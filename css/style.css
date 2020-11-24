@@ -186,8 +186,16 @@ color: #2a241b;
 }
 
 #story .row {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #b4928a;
+  border-bottom: 1px solid #b4928a;
+}
+
+#st .row {
+  border-bottom: none;
+}
+
+#story .cvbutton {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #b4928a;
 }
 
 #hero h1 {
@@ -282,10 +290,6 @@ nav {
     font-size: 0.65em;
 }
 
-#recipemenoborder {
-  margin-bottom: 25px
-}
-
 #about {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -371,10 +375,6 @@ div > ol > li {
     margin: 0;
 }
 
-#tokyo picture {
-    width 100%, max-width 100%, height: auto
-}
-
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
@@ -458,6 +458,10 @@ Medium devices (640px and larger)
   width: 50%;
 }
 
+  .col-md-12 {
+width: 100%;
+}
+
 [class*="col-"] {
 float: left;
 padding: 0 15px
@@ -473,11 +477,6 @@ padding: 0 15px
   margin-top: 0;
 }
 
-#recipemenoborder {
-  margin: 25px 0;
-  padding-bottom: 280px;
-}
-
 #story h2 {
 margin-top: 0;
 }
@@ -491,14 +490,13 @@ display: block;
 }
 
 div > ul {
-  padding-left: 100px;
+  padding-left: 85px;
   padding-right: 0;
 }
 
 #st h3 {
-  padding-left: 80px;
+  padding-left: 70px;
 }
-
 
 }
 
@@ -533,7 +531,42 @@ Large devices (1024px or larger)
   display: block;
 }
 
+#st {
+  padding-right: 0;
+  padding-left: 55px;
+}
 
+#st .row {
+  margin-top: 0;
+}
+
+div > ul {
+  padding-left: 14px;
+  padding-right: 0;
+}
+
+#st h3 {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+#st h2 {
+  margin-bottom: 5px;
+}
+
+.container {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#t ul {
+  padding-left: 55px;
+}
+
+#t h3 {
+  padding-left: 35px;
+}
 
 }
 
@@ -549,12 +582,33 @@ margin-right: auto;
 }
 
 main {
-padding-bottom: 99px;
+padding-bottom: 35px;
 }
+
+#st {
+  padding-right: 0;
+  padding-left: 45px;
+}
+
 }
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+
+.container {
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#t ul {
+  padding-left: 75px;
+}
+
+#t h3 {
+  padding-left: 55px;
+}
+
 }
