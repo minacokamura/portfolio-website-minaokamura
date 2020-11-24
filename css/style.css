@@ -92,28 +92,29 @@ a:active {
 }
 a:hover,
 a:focus {
-    color: #c4964d;
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration:none;
 }
 
 .button {
     display: inline-block;
-    background-color: #ffffff;
-    color: #b4928a;
-    font-size: 0.85em;
+    background-color: #c4964d;
+    color: #ffffff;
+    font-size: 0.75em;
     font-weight: 400;
     text-decoration: none;
-    padding: 6px;
-    border-radius: 3px;
-    border-bottom: 2px solid #b4928a;
-    transition-duration: 0.2s;
-    transition-property: opacity;
+    padding: 3px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-radius: 5px;
+    border-bottom: 2px solid #ffffff;
+    transition: 0.5s opacity;
 }
 .button:hover {
     opacity: 0.8;
 }
 .button:active {
-    color: #2a241b;
+color: #2a241b;
 }
 
 .button.contact {
@@ -122,7 +123,9 @@ a:focus {
     text-transform: uppercase;
     border: 2px solid #ffffff;
     font-weight: 400;
-    font-size: 0.85em;
+    font-size: 0.75em;
+    color: #ffffff;
+    transition: all 0.5s;
 }
 
 .button.contact:hover {
@@ -144,6 +147,7 @@ a:focus {
     border: 2px solid #ffffff;
     font-weight: 400;
     font-size: 0.85em;
+    transition: all 0.5s;
 }
 .button.cv:hover {
     background-color: #ffffff;
@@ -330,7 +334,7 @@ div > ul {
 
 #project {
     padding-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 45px;
 }
 
 #project h1,
@@ -367,6 +371,73 @@ div > ol > li {
     margin: 0;
 }
 
+#tokyo picture {
+    width 100%, max-width 100%, height: auto
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #d40000;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(100px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 25s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 35s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes bird-flying {
+  from {transform: translate(5,10px);}
+  to {transform: translate(15px,5px);}
+}
+
+.bird {
+  animation-duration: 2s;
+  animation-name: bird-flying;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes leaf-rotate {
+  from {transform: rotate(0);}
+  to {transform: rotate(35deg);}
+}
+
+.leaf {
+  animation-duration: 15s;
+  animation-name: leaf-rotate;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -385,7 +456,6 @@ Medium devices (640px and larger)
 
   .col-md-6 {
   width: 50%;
-  padding-left: 15px;
 }
 
 [class*="col-"] {
@@ -412,18 +482,6 @@ padding: 0 15px
 margin-top: 0;
 }
 
-#st h2 {
-  text-align: center;
-}
-
-#st h3 {
-  padding-left: 83px;
-}
-
-#st .row {
-  margin-bottom: 35px;
-}
-
 main {
 padding-top: 99px;
 }
@@ -432,6 +490,14 @@ span {
 display: block;
 }
 
+div > ul {
+  padding-left: 100px;
+  padding-right: 0;
+}
+
+#st h3 {
+  padding-left: 80px;
+}
 
 
 }
