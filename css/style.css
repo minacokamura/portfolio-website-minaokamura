@@ -27,8 +27,7 @@ body {
 
 header {
     background-color: #b4928a;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 0 6px;
     border-bottom: 3px solid #d4bebe;
     box-shadow:  3px 4px 9px 0px rgba(140, 92, 23, 0.64);
     position: fixed;
@@ -36,7 +35,7 @@ header {
 }
 
 main {
-    padding-top: 120px;
+    padding-top: 64px;
 }
 
 footer {
@@ -233,20 +232,50 @@ color: #2a241b;
     max-width: 120px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+  padding-left: 35px;
+  padding-top: 12px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(237,230,223,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 nav > ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav > ul > li {
-    display: inline-block;
+    margin: 0;
 }
 
 nav > ul > li > a {
     padding: 0 10px;
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 0.85em;
+    font-size: 0.65em;
     color: #d4bebe;
 }
 
@@ -260,11 +289,6 @@ nav > ul > li > a:hover {
 
 nav > ul > li > a:active {
     color: #c4964d;
-}
-
-nav {
-    display: inline-block;
-    width: 100%;
 }
 
 #hero {
@@ -454,6 +478,35 @@ Medium devices (640px and larger)
   margin-top: 4px;
 }
 
+  nav > ul {
+  margin: 1em 0;
+}
+
+  nav > ul > li {
+  display: inline-block;
+}
+
+.navtoggle.responsive nav {
+  padding: 0px;
+}
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  border-top: none;
+}
+
+.navtoggle.responsive ul  {
+  margin-bottom: 6px;
+  margin-top: 7px;
+}
+
   .col-md-6 {
   width: 50%;
 }
@@ -497,6 +550,11 @@ div > ul {
 #st h3 {
   padding-left: 70px;
 }
+
+nav > ul > li > a {
+    font-size: 0.90em;
+}
+
 
 }
 
